@@ -1,5 +1,16 @@
-local maps = { i = {}, n = {}, v = {}, t = {} }
+-- Aliases
+local map = vim.api.nvim_set_keymap
+local default_opts = {noremap = true, silent = true}
+local cmd = vim.cmd
 
-maps.n["<leader>e"] = { "<cmd>Neotree toggle<cr>", desc = "Toggle Explorer" }
-maps.n["<leader>o"] = { "<cmd>Neotree focus<cr>", desc = "Focus Explorer" }
+-- Disable cursor keys
+map('', '<up>', '<nop>', {noremap = true})
+map('', '<down>', '<nop>', {noremap = true})
+map('', '<left>', '<nop>', {noremap = true})
+map('', '<right>', '<nop>', {noremap = true})
 
+-- Move in insert mode
+map('i', '<C-h>', '<Left>', default_opts)
+map('i', '<C-j>', '<Down>', default_opts)
+map('i', '<C-k>', '<Up>', default_opts)
+map('i', '<C-l>', '<Right>', default_opts)
