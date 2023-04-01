@@ -21,4 +21,12 @@ return require('packer').startup(function(use)
     		}
   	}
 
+	use {
+     		'feline-nvim/feline.nvim',
+      		requires = {
+        		'gitsigns.nvim',
+        		'nvim-web-devicons'
+    		},
+  	}
+
 end)
