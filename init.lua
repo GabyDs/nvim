@@ -1,5 +1,7 @@
 require('keymaps')		----- keymaps
-require('plugins/ayu')		----- color theme
-require('plugins/packer')	----- plugin manager
 require('settings')		----- settings
-require('neo-tree')		----- file manager
+require('plugins/packer')	----- plugin manager
+
+require('plugins/ayu')		----- color theme
+require('plugins/neo-tree')	----- file explorer
+require('plugins/feline')	----- status bar

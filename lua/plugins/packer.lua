@@ -20,11 +20,10 @@ return require('packer').startup(function(use)
       			"MunifTanjim/nui.nvim",
     		}
   	}
-
 	use {
      		'feline-nvim/feline.nvim',
       		requires = {
-        		'gitsigns.nvim',
+        		'lewis6991/gitsigns.nvim',
         		'nvim-web-devicons'
     		},
   	}
