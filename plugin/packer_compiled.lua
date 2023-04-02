@@ -79,6 +79,11 @@ _G.packer_plugins = {
     path = "/home/gabriel/.local/share/nvim/site/pack/packer/start/AutoSave.nvim",
     url = "https://github.com/pocco81/AutoSave.nvim"
   },
+  YouCompleteMe = {
+    loaded = true,
+    path = "/home/gabriel/.local/share/nvim/site/pack/packer/start/YouCompleteMe",
+    url = "https://github.com/Valloric/YouCompleteMe"
+  },
   ["diffview.nvim"] = {
     loaded = true,
     path = "/home/gabriel/.local/share/nvim/site/pack/packer/start/diffview.nvim",
