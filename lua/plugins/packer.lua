@@ -7,6 +7,8 @@ end
 
 return require('packer').startup(function(use)
 	
+	use 'pocco81/AutoSave.nvim'
+
 	use 'wbthomason/packer.nvim'
 	
 	use 'Shatur/neovim-ayu'
@@ -20,12 +22,19 @@ return require('packer').startup(function(use)
       			"MunifTanjim/nui.nvim",
     		}
   	}
+
 	use {
      		'feline-nvim/feline.nvim',
       		requires = {
         		'lewis6991/gitsigns.nvim',
         		'nvim-web-devicons'
     		},
+  	}
+
+	-- tabs
+  	use {
+    		'nanozuki/tabby.nvim',
+    		requires = { 'kyazdani42/nvim-web-devicons' },
   	}
 
 end)

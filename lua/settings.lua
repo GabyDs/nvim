@@ -8,6 +8,7 @@ local opt = vim.opt
 
 -- General config
 g.mapleader = " "
+opt.clipboard = 'unnamedplus' -- copy/paste to system clipboard
 
 -- UI
 opt.number = true
