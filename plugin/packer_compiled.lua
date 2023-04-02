@@ -74,6 +74,16 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["AutoSave.nvim"] = {
+    loaded = true,
+    path = "/home/gabriel/.local/share/nvim/site/pack/packer/start/AutoSave.nvim",
+    url = "https://github.com/pocco81/AutoSave.nvim"
+  },
+  ["diffview.nvim"] = {
+    loaded = true,
+    path = "/home/gabriel/.local/share/nvim/site/pack/packer/start/diffview.nvim",
+    url = "https://github.com/sindrets/diffview.nvim"
+  },
   ["feline.nvim"] = {
     loaded = true,
     path = "/home/gabriel/.local/share/nvim/site/pack/packer/start/feline.nvim",

@@ -6,6 +6,10 @@ if fn.empty(fn.glob(install_path)) > 0 then
 end
 
 return require('packer').startup(function(use)
+
+	use 'kdheepak/lazygit.nvim'
+
+	use { 'sindrets/diffview.nvim', requires = 'nvim-lua/plenary.nvim' }
 	
 	use 'pocco81/AutoSave.nvim'
 
