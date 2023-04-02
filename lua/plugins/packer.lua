@@ -6,15 +6,19 @@ if fn.empty(fn.glob(install_path)) > 0 then
 end
 
 return require('packer').startup(function(use)
+	use 'wbthomason/packer.nvim'
+
+	use {
+		"windwp/nvim-autopairs",
+    		config = function() require("nvim-autopairs").setup {} end
+	}
 
 	use 'kdheepak/lazygit.nvim'
 
 	use { 'sindrets/diffview.nvim', requires = 'nvim-lua/plenary.nvim' }
 	
 	use 'pocco81/AutoSave.nvim'
-
-	use 'wbthomason/packer.nvim'
-	
+		
 	use 'Shatur/neovim-ayu'
 
 	use {
