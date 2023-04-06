@@ -8,6 +8,16 @@ end
 return require('packer').startup(function(use)
 	use 'wbthomason/packer.nvim'
 
+	use {
+  		'lervag/vimtex',
+  		ft = {'tex', 'bib'},
+  		config = function()
+    			vim.g.vimtex_view_method = 'zathura'
+    			vim.g.vimtex_compiler_method = 'latexmk'
+  		end
+	}
+
+
   	use {
   		'VonHeikemen/lsp-zero.nvim',
   		branch = 'v1.x',

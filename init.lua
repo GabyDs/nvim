@@ -10,3 +10,4 @@ require('plugins/tabby')        ----- tabs
 require('plugins/auto-save')
 require('plugins/nvim-autopairs')	----- autopairs
 require('plugins/lsp-zero')
+require('plugins/vimtex')
